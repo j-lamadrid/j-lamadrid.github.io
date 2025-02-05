@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+body {
+  margin: 0;
+  font-family: "Pixelify Sans", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to left, rgb(53, 37, 14), rgb(53, 46, 26));
+}

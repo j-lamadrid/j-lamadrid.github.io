@@ -1,0 +1,80 @@
+<svg width="80" height="80" viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg" stroke="#d38bfc">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(1 1)" stroke-width="2">
+            <rect x="0" y="30" width="15" height="15">
+                <animate attributeName="y"
+                     begin="0s" dur="2.2s"
+                     values="30;0;30;30"
+                     calcMode="linear"
+                     repeatCount="indefinite" />
+                <animate attributeName="x"
+                     begin="0s" dur="2.2s"
+                     values="0;15;30;0"
+                     calcMode="linear"
+                     repeatCount="indefinite" />
+            </rect>
+            <rect x="15" y="0" width="15" height="15">
+                <animate attributeName="y"
+                     begin="0s" dur="2.2s"
+                     from="0" to="0"
+                     values="0;30;30;0"
+                     calcMode="linear"
+                     repeatCount="indefinite" />
+                <animate attributeName="x"
+                     begin="0s" dur="2.2s"
+                     from="15" to="15"
+                     values="15;30;0;15"
+                     calcMode="linear"
+                     repeatCount="indefinite" />
+            </rect>
+            <rect x="30" y="30" width="15" height="15">
+                <animate attributeName="y"
+                     begin="0s" dur="2.2s"
+                     values="30;30;0;30"
+                     calcMode="linear"
+                     repeatCount="indefinite" />
+                <animate attributeName="x"
+                     begin="0s" dur="2.2s"
+                     values="30;0;15;30"
+                     calcMode="linear"
+                     repeatCount="indefinite" />
+            </rect>
+            <rect x="30" y="0" width="15" height="15">
+                <animate attributeName="y"
+                     begin="0s" dur="2.2s"
+                     values="0;30;30;0"
+                     calcMode="linear"
+                     repeatCount="indefinite" />
+                <animate attributeName="x"
+                     begin="0s" dur="2.2s"
+                     values="30;15;0;30"
+                     calcMode="linear"
+                     repeatCount="indefinite" />
+            </rect>
+            <rect x="0" y="0" width="15" height="15">
+                <animate attributeName="y"
+                     begin="0s" dur="2.2s"
+                     values="0;30;30;0"
+                     calcMode="linear"
+                     repeatCount="indefinite" />
+                <animate attributeName="x"
+                     begin="0s" dur="2.2s"
+                     values="0;15;30;0"
+                     calcMode="linear"
+                     repeatCount="indefinite" />
+            </rect>
+            <rect x="15" y="30" width="15" height="15">
+                <animate attributeName="y"
+                     begin="0s" dur="2.2s"
+                     values="30;0;30;30"
+                     calcMode="linear"
+                     repeatCount="indefinite" />
+                <animate attributeName="x"
+                     begin="0s" dur="2.2s"
+                     values="15;30;0;15"
+                     calcMode="linear"
+                     repeatCount="indefinite" />
+            </rect>
+        </g>
+    </g>
+</svg>
