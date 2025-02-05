@@ -29,7 +29,8 @@ import {
   SiScikitlearn,
   SiTensorflow,
   SiArduino,
-  SiApachespark
+  SiApachespark,
+  SiNasa,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
