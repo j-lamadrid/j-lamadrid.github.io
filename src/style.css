@@ -32,7 +32,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #201707;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -442,9 +442,79 @@ button:focus {
 .blockquote-footer {
   color: #c0af88 !important;
 }
+
+/* Custom Accordion Item Styles */
+.accordion-item-custom {
+  border: 1px solid #ffffff;       /* Custom border color */
+  border-radius: 0px;              /* Rounded corners */
+  overflow: hidden;                
+  margin-bottom: 2rem; 
+  background-color: white;            
+}
+
+/* Optional: Customize the header inside the custom accordion item */
+.accordion-item-custom .accordion-header-custom .accordion-button {
+  background-color: rgb(83, 67, 39) !important; /* Header background color */
+  color: #010000 !important;            /* Header text color */
+  font-weight: bold;
+  border: none;
+}
+
+/* Optional: Hover and focus effects for the header button */
+.accordion-item-custom .accordion-header-custom .accordion-button:hover,
+.accordion-item-custom .accordion-header-custom .accordion-button:focus {
+  background-color: #5e4a32 !important;
+  color: #ffffff !important;
+}
+
+/* Optional: Customize the body inside the custom accordion item */
+.accordion-item-custom .accordion-body-custom {
+  background-color: #4f432b !important; /* Body background color */
+  color: #000000 !important;            /* Body text color */
+  padding: 1rem;                        /* Internal spacing */
+}
+
 /* --------- */
 /* Projects */
 /* --------- */
+.learning-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+.learning-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.learning-card-view {
+  box-shadow: 0 4px 5px 3px rgba(136, 100, 53, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.learning-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(136, 100, 53, 0.459) !important;
+}
+
+.learning-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+}
+
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -507,13 +577,13 @@ button:focus {
 
 .card-img-top {
   padding: 20px !important;
-  opacity: 0.8 !important;
+  opacity: 0.9 !important;
   border-radius: 10px !important;
 }
 
 .blog-img {
   padding: 0px !important;
-  opacity: 0.8 !important;
+  opacity: 0.9 !important;
   border-radius: 0px !important;
 }
 

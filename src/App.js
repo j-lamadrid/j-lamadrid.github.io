@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Learning from "./components/Learning/Learning";
+import SupervisedLearning from "./components/Learning/Pages/SupervisedLearning";
 import {
   BrowserRouter as Router,
   Route,
@@ -42,6 +43,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/learning" element={<Learning />} />
           <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/SupervisedLearning" element={<SupervisedLearning />} />
         </Routes>
         <Footer />
       </div>
