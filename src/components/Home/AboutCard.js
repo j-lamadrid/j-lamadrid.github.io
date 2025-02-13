@@ -9,8 +9,7 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             I am from <span className="brown"> San Diego, California</span> and
-            I am currently pursuing my Masters in Applied Artificial Intelligence 
-            at the University of San Diego. I have completed my Bachelors of Science 
+            I am currently pursuing my Masters. I have completed my Bachelors of Science 
             in Cognitive Science specializing in Machine Learning with a minor in 
             Data Science at the University of California, San Diego.
             <br />
