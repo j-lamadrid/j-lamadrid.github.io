@@ -248,6 +248,7 @@ button:focus {
   background-size: cover !important;
   width: 100%;
   height: 100%;
+  z-index: 0 !important;
 }
 
 .home-header {
@@ -811,4 +812,310 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* Learning Section Styles */
+.learning-section {
+    padding: 4rem 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.learning-description {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    height: 100%;
+}
+
+.learning-description h4 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.learning-description ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.learning-description ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.learning-description ul li:before {
+    content: "•";
+    color: #ffd700;
+    position: absolute;
+    left: 0;
+}
+
+.interactive-controls {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.form-select, .form-range {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.form-select:focus, .form-range:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: #ffd700;
+    box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
+}
+
+.accordion-item-custom {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+}
+
+.accordion-header-custom {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.accordion-header-custom button {
+    color: #fff;
+    font-weight: 500;
+}
+
+.accordion-header-custom button:not(.collapsed) {
+    background-color: rgba(255, 215, 0, 0.1);
+    color: #ffd700;
+}
+
+.accordion-body-custom {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+}
+
+/* Chart.js Customization */
+canvas {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Code Section Styles */
+.code-section {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.code-block {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 1rem;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    margin: 1rem 0;
+}
+
+.output-section {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.output-section pre {
+    color: #4ec9b0;
+    margin: 0;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.9rem;
+}
+
+.code-section h5 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.code-section h6 {
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+/* Button Styles */
+.code-section .btn-primary {
+    background-color: #4a4a4a;
+    border-color: #4a4a4a;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.code-section .btn-primary:hover {
+    background-color: #5a5a5a;
+    border-color: #5a5a5a;
+}
+
+.code-section .btn-primary:disabled {
+    background-color: #3a3a3a;
+    border-color: #3a3a3a;
+    opacity: 0.7;
+}
+
+/* Custom Tabs Styles */
+.custom-tabs {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1rem;
+    position: relative;
+    z-index: 3;
+}
+
+.custom-tabs .nav-link {
+    color: #fff !important;
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0.5rem 1rem !important;
+    margin-right: 0.5rem !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    position: relative !important;
+    z-index: 4 !important;
+}
+
+.custom-tabs .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.custom-tabs .nav-link.active {
+    background-color: rgba(255, 215, 0, 0.2) !important;
+    color: #ffd700 !important;
+    font-weight: 500 !important;
+}
+
+.custom-tab {
+    padding: 1rem !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 8px !important;
+    margin-top: 1rem !important;
+    position: relative !important;
+    z-index: 3 !important;
+}
+
+/* Chart Container Styles */
+.chart-container {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Run Button Styles */
+.run-button {
+    background-color: #4a4a4a !important;
+    border-color: #4a4a4a !important;
+    color: #fff !important;
+    padding: 0.5rem 1.5rem !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    position: relative !important;
+    z-index: 4 !important;
+}
+
+.run-button:hover:not(:disabled) {
+    background-color: #5a5a5a !important;
+    border-color: #5a5a5a !important;
+    transform: translateY(-2px) !important;
+}
+
+.run-button:disabled {
+    background-color: #3a3a3a !important;
+    border-color: #3a3a3a !important;
+    opacity: 0.7 !important;
+    cursor: not-allowed !important;
+}
+
+/* Results Section Styles */
+.results-section {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.results-section h6 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.results-section p {
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+/* Accordion Customization */
+.accordion-item-custom {
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    margin-bottom: 1rem !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.accordion-header-custom {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    position: relative !important;
+    z-index: 3 !important;
+}
+
+.accordion-header-custom button {
+    color: #fff !important;
+    font-weight: 500 !important;
+    padding: 1rem !important;
+    cursor: pointer !important;
+    position: relative !important;
+    z-index: 4 !important;
+}
+
+.accordion-header-custom button:not(.collapsed) {
+    background-color: rgba(255, 215, 0, 0.1) !important;
+    color: #ffd700 !important;
+}
+
+.accordion-body-custom {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    padding: 1.5rem !important;
+    color: #fff !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+/* Code Section Enhancement */
+.code-section {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 8px !important;
+    padding: 1.5rem !important;
+    margin-top: 1rem !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.code-block {
+    background-color: #1e1e1e !important;
+    color: #d4d4d4 !important;
+    padding: 1rem !important;
+    border-radius: 4px !important;
+    font-family: 'Consolas', 'Monaco', monospace !important;
+    font-size: 0.9rem !important;
+    overflow-x: auto !important;
+    white-space: pre-wrap !important;
+    margin: 1rem 0 !important;
+    position: relative !important;
+    z-index: 2 !important;
 }
