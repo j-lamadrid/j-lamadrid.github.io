@@ -21,26 +21,29 @@ import {
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+    <Row
+      className="justify-content-center"
+      style={{ paddingBottom: "50px" }}
+    >
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiWindows />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiVisualstudiocode />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiPycharm />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiIntellijidea />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <DiAws />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiMicrosoftazure />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiAbletonlive />
       </Col>
     </Row>

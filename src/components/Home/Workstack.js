@@ -13,16 +13,40 @@ import brainLogo from "../../Assets/image (1).png";
 
 
 function Workstack() {
+  const iconBoxStyle = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "140px", // fixed height for all boxes
+    width: "100%",   // take full width of Col
+  };
+
+  const imgStyle = {
+    width: "auto",
+    height: "auto",
+    display: "block",
+  };
+
+  const iconStyle = {
+    fontSize: "60px",
+  };
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNasa />
+        <div style={iconBoxStyle}>
+          <SiNasa style={iconStyle} />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={ucsdHealthLogo} alt="UCSD Health Logo" style={{ width: "100%" }} />
+        <div style={iconBoxStyle}>
+          <img src={ucsdHealthLogo} alt="UCSD Health Logo" style={imgStyle} />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={brainLogo} alt="Brain Logo" style={{ width: "100%" }} />
+        <div style={iconBoxStyle}>
+          <img src={brainLogo} alt="Brain Logo" style={imgStyle} />
+        </div>
       </Col>
     </Row>
   );

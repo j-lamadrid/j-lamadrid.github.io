@@ -36,44 +36,44 @@ import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+    <Row className="justify-content-center" style={{ paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <DiPython />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiPandas />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiPytorch />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiTensorflow />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiScikitlearn />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiApachespark />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiRstudio />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <DiPostgresql />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <DiDart />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiFlutter />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <DiReact />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <CgCPlusPlus />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="d-flex justify-content-center tech-icons">
         <SiArduino />
       </Col>
     </Row>
