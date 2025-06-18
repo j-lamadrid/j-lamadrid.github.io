@@ -22,9 +22,8 @@ function Workstack() {
   };
 
   const imgStyle = {
-    width: "auto",
+    width: "100%",
     height: "auto",
-    display: "block",
   };
 
   const iconStyle = {

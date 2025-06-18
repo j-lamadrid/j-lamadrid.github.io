@@ -144,12 +144,40 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #2e261a !important; /* Fix: Use your dark brown, not blue */
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
+  /* Ensure nav links are visible and stacked vertically */
+  .navbar-nav {
+    background-color: #2e261a !important;
+    width: 100%;
+  }
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    display: block !important;
+    width: 100%;
+    text-align: left !important;
+    padding: 1rem !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .custom-tabs {
+    display: block !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    padding: 0.5rem 0.2rem !important;
+    background-color: rgba(255,255,255,0.05) !important;
+  }
+  .custom-tabs .nav-link {
+    display: inline-block !important;
+    min-width: 120px;
+    margin-bottom: 0.5rem !important;
+    font-size: 1rem !important;
+    text-align: center !important;
+  }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -829,7 +857,7 @@ button:focus {
 }
 
 .learning-description h4 {
-    color: #ffd700;
+    color: #759e6d;
     margin-bottom: 1rem;
 }
 
@@ -846,7 +874,7 @@ button:focus {
 
 .learning-description ul li:before {
     content: "•";
-    color: #ffd700;
+    color: #759e6d;
     position: absolute;
     left: 0;
 }
@@ -866,7 +894,7 @@ button:focus {
 
 .form-select:focus, .form-range:focus {
     background-color: rgba(255, 255, 255, 0.15);
-    border-color: #ffd700;
+    border-color: #759e6d;
     box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
 }
 
@@ -887,7 +915,7 @@ button:focus {
 
 .accordion-header-custom button:not(.collapsed) {
     background-color: rgba(255, 215, 0, 0.1);
-    color: #ffd700;
+    color: #759e6d;
 }
 
 .accordion-body-custom {
@@ -929,19 +957,19 @@ canvas {
 }
 
 .output-section pre {
-    color: #4ec9b0;
+    color: #759e6d;
     margin: 0;
     font-family: 'Consolas', 'Monaco', monospace;
     font-size: 0.9rem;
 }
 
 .code-section h5 {
-    color: #ffd700;
+    color: #759e6d;
     margin-bottom: 1rem;
 }
 
 .code-section h6 {
-    color: #ffd700;
+    color: #759e6d;
     margin-bottom: 0.5rem;
 }
 
@@ -992,7 +1020,7 @@ canvas {
 
 .custom-tabs .nav-link.active {
     background-color: rgba(255, 215, 0, 0.2) !important;
-    color: #ffd700 !important;
+    color: #759e6d !important;
     font-weight: 500 !important;
 }
 
@@ -1050,7 +1078,7 @@ canvas {
 }
 
 .results-section h6 {
-    color: #ffd700;
+    color: #759e6d;
     margin-bottom: 1rem;
 }
 
@@ -1085,7 +1113,7 @@ canvas {
 
 .accordion-header-custom button:not(.collapsed) {
     background-color: rgba(255, 215, 0, 0.1) !important;
-    color: #ffd700 !important;
+    color: #759e6d !important;
 }
 
 .accordion-body-custom {
@@ -1118,4 +1146,10 @@ canvas {
     margin: 1rem 0 !important;
     position: relative !important;
     z-index: 2 !important;
+}
+
+.alert-python-loading {
+    background-color: #8674486b !important;
+    color: #fff !important;
+    border: #8674486b !important;
 }

@@ -150,29 +150,29 @@ r2 = r2_score(y, y_pred)
 fig, ax = plt.subplots(figsize=(10, 6), facecolor='#2e261a')
 ax.set_facecolor('#2e261a')
 
-# Plot data points and regression line
-ax.scatter(X, y, color='#ffd700', label='Actual Data', s=100, alpha=0.8)
-ax.plot(X, y_pred, color='#c5a861', label='Linear Regression', linewidth=2)
+# Plot data points and regression line (all #759e6d)
+ax.scatter(X, y, color='#759e6d', label='Actual Data', s=100, alpha=0.8)
+ax.plot(X, y_pred, color='#759e6d', label='Linear Regression', linewidth=2)
 
 # Customize the plot
-ax.set_xlabel('X', fontsize=12, color='#c5a861')
-ax.set_ylabel('y', fontsize=12, color='#c5a861')
-ax.set_title('Linear Regression Results', fontsize=14, pad=20, color='#ffd700')
+ax.set_xlabel('X', fontsize=12, color='#759e6d')
+ax.set_ylabel('y', fontsize=12, color='#759e6d')
+ax.set_title('Linear Regression Results', fontsize=14, pad=20, color='#759e6d')
 
 # Customize grid
-ax.grid(True, alpha=0.3, color='#c5a861')
+ax.grid(True, alpha=0.3, color='#759e6d')
 ax.set_axisbelow(True)
 
 # Customize spines
 for spine in ax.spines.values():
-    spine.set_color('#c5a861')
+    spine.set_color('#759e6d')
 
 # Customize ticks
-ax.tick_params(colors='#c5a861')
+ax.tick_params(colors='#759e6d')
 
 # Customize legend
-legend = ax.legend(frameon=True, facecolor='#2e261a', edgecolor='#c5a861')
-plt.setp(legend.get_texts(), color='#c5a861')
+legend = ax.legend(frameon=True, facecolor='#2e261a', edgecolor='#759e6d')
+plt.setp(legend.get_texts(), color='#759e6d')
 
 # Adjust layout
 plt.tight_layout()
@@ -270,7 +270,7 @@ ax.set_facecolor('#2e261a')
 
 # Plot data points
 for i in range(len(X)):
-    color = '#ffd700' if y[i] == 0 else '#c5a861'
+    color = '#759e6d' if y[i] == 0 else '#c5a861'
     ax.scatter(X[i, 0], X[i, 1], color=color, s=100, alpha=0.8, 
               label=f'Class {y[i]}' if i < 2 else "")
 
@@ -286,7 +286,7 @@ ax.contour(xx, yy, Z, colors='#c5a861', alpha=0.3)
 # Customize the plot
 ax.set_xlabel('Feature 1', fontsize=12, color='#c5a861')
 ax.set_ylabel('Feature 2', fontsize=12, color='#c5a861')
-ax.set_title('SVM Classification Results', fontsize=14, pad=20, color='#ffd700')
+ax.set_title('SVM Classification Results', fontsize=14, pad=20, color='#759e6d')
 
 # Customize grid
 ax.grid(True, alpha=0.3, color='#c5a861')
@@ -369,7 +369,7 @@ ax.set_facecolor('#2e261a')
 
 # Plot data points
 for i in range(len(X)):
-    color = '#ffd700' if y[i] == 0 else '#c5a861'
+    color = '#759e6d' if y[i] == 0 else '#c5a861'
     ax.scatter(X[i, 0], X[i, 1], color=color, s=100, alpha=0.8,
               label=f'Class {y[i]}' if i < 2 else "")
 
@@ -385,7 +385,7 @@ ax.contour(xx, yy, Z, colors='#c5a861', alpha=0.3)
 # Customize the plot
 ax.set_xlabel('Feature 1', fontsize=12, color='#c5a861')
 ax.set_ylabel('Feature 2', fontsize=12, color='#c5a861')
-ax.set_title(f'KNN Classification (k=${knnK})', fontsize=14, pad=20, color='#ffd700')
+ax.set_title(f'KNN Classification (k=${knnK})', fontsize=14, pad=20, color='#759e6d')
 
 # Customize grid
 ax.grid(True, alpha=0.3, color='#c5a861')
@@ -471,12 +471,12 @@ ax.set_facecolor('#2e261a')
 
 # Plot feature importance
 features = [f'Feature {i+1}' for i in range(len(feature_importance))]
-bars = ax.bar(features, feature_importance, color='#ffd700', alpha=0.8)
+bars = ax.bar(features, feature_importance, color='#759e6d', alpha=0.8)
 
 # Customize the plot
 ax.set_xlabel('Features', fontsize=12, color='#c5a861')
 ax.set_ylabel('Importance', fontsize=12, color='#c5a861')
-ax.set_title(f'Decision Tree Feature Importance (Depth=${treeDepth})', fontsize=14, pad=20, color='#ffd700')
+ax.set_title(f'Decision Tree Feature Importance (Depth=${treeDepth})', fontsize=14, pad=20, color='#759e6d')
 
 # Customize grid
 ax.grid(True, alpha=0.3, color='#c5a861')
@@ -559,12 +559,12 @@ ax.set_facecolor('#2e261a')
 
 # Plot feature importance
 features = [f'Feature {i+1}' for i in range(len(feature_importance))]
-bars = ax.bar(features, feature_importance, color='#ffd700', alpha=0.8)
+bars = ax.bar(features, feature_importance, color='#759e6d', alpha=0.8)
 
 # Customize the plot
 ax.set_xlabel('Features', fontsize=12, color='#c5a861')
 ax.set_ylabel('Importance', fontsize=12, color='#c5a861')
-ax.set_title(f'Random Forest Feature Importance (Trees=${forestSize})', fontsize=14, pad=20, color='#ffd700')
+ax.set_title(f'Random Forest Feature Importance (Trees=${forestSize})', fontsize=14, pad=20, color='#759e6d')
 
 # Customize grid
 ax.grid(True, alpha=0.3, color='#c5a861')
@@ -639,7 +639,7 @@ ax.set_facecolor('#2e261a')
 
 # Plot data points
 for i in range(len(X)):
-    color = '#ffd700' if y[i] == 0 else '#c5a861'
+    color = '#759e6d' if y[i] == 0 else '#c5a861'
     ax.scatter(X[i, 0], X[i, 1], color=color, s=100, alpha=0.8,
               label=f'Class {y[i]}' if i < 2 else "")
 
@@ -655,7 +655,7 @@ ax.contour(xx, yy, Z, colors='#c5a861', alpha=0.3)
 # Customize the plot
 ax.set_xlabel('Feature 1', fontsize=12, color='#c5a861')
 ax.set_ylabel('Feature 2', fontsize=12, color='#c5a861')
-ax.set_title('Naive Bayes Classification', fontsize=14, pad=20, color='#ffd700')
+ax.set_title('Naive Bayes Classification', fontsize=14, pad=20, color='#759e6d')
 
 # Customize grid
 ax.grid(True, alpha=0.3, color='#c5a861')
@@ -777,14 +777,14 @@ accuracy = np.mean(predictions == y.reshape(-1, 1))
 
 # Create the plot
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6), facecolor='#2e261a')
-fig.suptitle('Neural Network Results', fontsize=14, color='#ffd700', y=1.05)
+fig.suptitle('Neural Network Results', fontsize=14, color='#759e6d', y=1.05)
 
 # Plot training loss
 ax1.set_facecolor('#2e261a')
-ax1.plot(losses, color='#ffd700', linewidth=2)
+ax1.plot(losses, color='#759e6d', linewidth=2)
 ax1.set_xlabel('Epoch', fontsize=12, color='#c5a861')
 ax1.set_ylabel('Loss', fontsize=12, color='#c5a861')
-ax1.set_title('Training Loss', fontsize=12, color='#ffd700')
+ax1.set_title('Training Loss', fontsize=12, color='#759e6d')
 ax1.grid(True, alpha=0.3, color='#c5a861')
 ax1.tick_params(colors='#c5a861')
 
@@ -796,14 +796,14 @@ xx, yy = np.meshgrid(np.linspace(x_min, x_max, 100),
                      np.linspace(y_min, y_max, 100))
 grid_points = np.c_[xx.ravel(), yy.ravel()]
 grid_predictions = (model.forward(grid_points) > 0.5).astype(int)
-grid_predictions = grid_predictions.reshape(xx.shape)
+grid_predictions = grid_predictions.reshape(xx.shape);
 
-ax2.contourf(xx, yy, grid_predictions, alpha=0.3, colors=['#ffd700', '#c5a861'])
-ax2.scatter(X[y==0, 0], X[y==0, 1], color='#ffd700', label='Class 0', alpha=0.8)
+ax2.contourf(xx, yy, grid_predictions, alpha=0.3, colors=['#759e6d', '#c5a861'])
+ax2.scatter(X[y==0, 0], X[y==0, 1], color='#759e6d', label='Class 0', alpha=0.8)
 ax2.scatter(X[y==1, 0], X[y==1, 1], color='#c5a861', label='Class 1', alpha=0.8)
 ax2.set_xlabel('Feature 1', fontsize=12, color='#c5a861')
 ax2.set_ylabel('Feature 2', fontsize=12, color='#c5a861')
-ax2.set_title('Decision Boundary', fontsize=12, color='#ffd700')
+ax2.set_title('Decision Boundary', fontsize=12, color='#759e6d')
 ax2.grid(True, alpha=0.3, color='#c5a861')
 ax2.tick_params(colors='#c5a861')
 ax2.legend(frameon=True, facecolor='#2e261a', edgecolor='#c5a861')
@@ -1577,7 +1577,7 @@ json.dumps(results)
             {
                 label: 'Decision Boundary',
                 data: [
-                    { x: 3.5, y: 1 },
+                    { x: 3.5, y: 0 },
                     { x: 3.5, y: 6 }
                 ],
                 borderColor: 'rgba(255, 255, 255, 0.8)',
@@ -1697,7 +1697,7 @@ json.dumps(results)
                     Here you can explore different supervised learning techniques and run Python code directly in your browser.
                 </p>
                 {!pyodideLoaded && (
-                    <div className="alert alert-info">
+                    <div className="alert alert-python-loading">
                         Loading Python environment... Please wait.
                     </div>
                 )}
