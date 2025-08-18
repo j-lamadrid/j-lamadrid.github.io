@@ -37,7 +37,7 @@ function AboutCard() {
               + Probabilistic Modeling and High Dimensional Data Analytics
             </li>
             <li className="about-activity">
-              + Embedded Artificial Intelligence and Lite Machine Learning
+              + EEG Signal Processing and Analysis
             </li>
           </ul>
             <br />
@@ -66,7 +66,7 @@ function AboutCard() {
             Current courses I am taking:
           <ul>
             <li className="about-activity">
-              + ISYE 6501: Introduction to Analytics Modeling
+              + ISYE 6420: Bayesian Statistics
             </li>
             <li className="about-activity">
               + ISYE 6525: High Dimensional Data Analytics

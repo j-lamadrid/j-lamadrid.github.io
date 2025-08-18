@@ -25,7 +25,13 @@ function ResumeNew() {
 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} width={900} />
+            <Page
+              pageNumber={1}
+              renderMode="canvas"
+              scale={1.5} // Increase scale for higher resolution
+              renderAnnotationLayer={true}
+              renderTextLayer={false}
+            />
           </Document>
         </Row>
 
