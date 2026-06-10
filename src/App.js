@@ -8,6 +8,7 @@ import Resume from "./components/Resume/ResumeNew";
 import Learning from "./components/Learning/Learning";
 import SupervisedLearning from "./components/Learning/Pages/SupervisedLearning";
 import LearningTopicPage from "./components/Learning/Pages/LearningTopicPage";
+import Music from "./components/Music/Music";
 import {
   BrowserRouter as Router,
   Route,
@@ -33,6 +34,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/learning" element={<Learning />} />
           <Route path="/learning/:topicSlug" element={<LearningTopicPage />} />
+          <Route path="/music" element={<Music />} />
           <Route path="*" element={<Navigate to="/"/>} />
           <Route path="/SupervisedLearning" element={<SupervisedLearning />} />
         </Routes>

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "40",
+    "file": "/music/40.wav"
+  },
+  {
+    "title": "Attention",
+    "file": "/music/attention.wav"
+  },
+  {
+    "title": "Int",
+    "file": "/music/int.wav"
+  },
+  {
+    "title": "Mirror",
+    "file": "/music/mirror.wav"
+  },
+  {
+    "title": "SNR+",
+    "file": "/music/SNR+.wav"
+  }
+]

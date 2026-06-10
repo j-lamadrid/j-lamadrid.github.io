@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
+import { FaMusic } from "react-icons/fa";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -91,6 +92,16 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineRobot style={{ marginBottom: "2px" }} /> Learning
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/music"
+                onClick={() => updateExpanded(false)}
+              >
+                <FaMusic style={{ marginBottom: "2px" }} /> Music
               </Nav.Link>
             </Nav.Item>
 
