@@ -7,52 +7,53 @@ import Aboutcard from "./AboutCard";
 import Toolstack from "./Toolstack";
 import Workstack from "./Workstack";
 
+const aboutGif =
+  "https://nukochannel.neocities.org/NukoImg/Stickers/nukoStickerThrone.gif";
+
 function About() {
   return (
     <Container fluid className="about-section">
       <Particle />
-      <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
-            }}
-          >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="brown">About Me </strong>
+      <Container className="about-container">
+        <Row className="about-lead-row align-items-center">
+          <Col xs={12} lg={7} className="reveal-up">
+            <p className="section-kicker">About</p>
+            <h1 className="project-heading">
+              Building useful systems from{" "}
+              <strong className="brown">scientific data</strong>.
             </h1>
             <Aboutcard />
           </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img
-                src='https://nukochannel.neocities.org/NukoImg/Stickers/nukoStickerThrone.gif'
-                alt="about pic"
-                style={{ width: "200px", paddingTop: 50 }}
-              />
+          <Col xs={12} lg={5} className="about-img reveal-up delay-1">
+            <div className="about-art-frame">
+              <img src={aboutGif} alt="Nuko pixel cat sitting on a throne" />
+            </div>
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="brown">Skillset </strong>
-        </h1>
 
-        <Techstack />
+        <section className="stack-section reveal-up">
+          <p className="section-kicker">Capabilities</p>
+          <h1 className="project-heading">
+            Professional <strong className="brown">Skillset</strong>
+          </h1>
+          <Techstack />
+        </section>
 
-        <h1 className="project-heading">
-          <strong className="brown">Tools</strong> I use
-        </h1>
-        <Toolstack />
-        
-        <h1 className="project-heading">
-          <strong className="brown">Work</strong> Experience
-        </h1>
-        <Workstack />
+        <section className="stack-section reveal-up">
+          <p className="section-kicker">Workflow</p>
+          <h1 className="project-heading">
+            <strong className="brown">Tools</strong> I use
+          </h1>
+          <Toolstack />
+        </section>
+
+        <section className="stack-section reveal-up">
+          <p className="section-kicker">Experience</p>
+          <h1 className="project-heading">
+            <strong className="brown">Work</strong> Experience
+          </h1>
+          <Workstack />
+        </section>
 
         <Github />
       </Container>
@@ -61,4 +62,3 @@ function About() {
 }
 
 export default About;
-

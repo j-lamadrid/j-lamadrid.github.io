@@ -3,25 +3,11 @@ import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiReact,
-  DiNodejs,
-  DiMongodb,
   DiPython,
-  DiGit,
-  DiJava,
-  DiAnaconda,
-  DiAws,
-  DiIntellij,
-  DiMysql,
-  DiRStudio,
   DiPostgresql,
   DiDart,
 } from "react-icons/di";
 import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
   SiRstudio,
   SiFlutter,
   SiPandas,
@@ -30,9 +16,7 @@ import {
   SiTensorflow,
   SiArduino,
   SiApachespark,
-  SiNasa,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (

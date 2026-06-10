@@ -1,81 +1,77 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
+    <Card className="quote-card-view about-copy-card">
       <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            I am from <span className="brown"> San Diego, California</span> and
-            I am currently pursuing my Masters in Analytics at 
-            <span className="brown"> Georgia Tech</span> with a 
-            focus on analytical tools and statistical learning. I have completed my 
-            Bachelors of Science in Cognitive Science specializing in Machine Learning 
-            with a minor in Data Science at the 
-            <span className="brown"> University of California, San Diego</span>.
-            <br />
-            <br />
-            My previous experiences include a <span className="brown"> NASA </span> 
-            internship at the Langley
-            Research Center with the Atmospheric Science Data Center as a Software
-            Developer involved in the Quality Analysis and Migration of Scientific
-            Data on the <a href="https://tolnet.larc.nasa.gov/" target="_blank" 
-            rel="noopener noreferrer" style={{ color: "inherit" }}>TOLNet</a> service.
-            I was also awarded the <span className="brown">2024 Cognitive Science 
-              Summer Scholar</span> Research Grant for my project on Artificial 
-              Intelligence methods for audio reconstruction from EEG signals.
-            <br />
-            <br />
-            Some of my general research interests include:
+        <p>
+          I am from <span className="brown">San Diego, California</span> and I
+          am pursuing a Masters in Analytics at{" "}
+          <span className="brown">Georgia Tech</span>, focused on analytical
+          tools, probabilistic modeling, and machine learning and am a 
+          <span className="brown"> Graduate Data Science Intern</span> with Centene. 
+          I have also completed
+          my B.S. in Cognitive Science specializing in Machine Learning with a
+          minor in Data Science at{" "}
+          <span className="brown">UC San Diego</span>.
+        </p>
+
+        <p>
+          My previous experience includes a{" "}
+          <span className="brown">NASA Langley Research Center</span> internship
+          with the Atmospheric Science Data Center, where I worked on quality
+          analysis and migration of scientific data for the{" "}
+          <a
+            href="https://tolnet.larc.nasa.gov/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TOLNet
+          </a>{" "}
+          service. I was also awarded the{" "}
+          <span className="brown">2024 Cognitive Science Summer Scholar</span>{" "}
+          Research Grant for work on AI methods for audio reconstruction from
+          EEG signals. Among these experiences, I have also worked at a clinical
+          research lab at UCSD involved in developing data management tools and
+          a mobile/web app for a research grant proposal on methods for tracking
+          parent's interaction with infants at risk for autism spectrum disorder
+          under the NIH.
+        </p>
+
+        <div className="about-focus-grid">
+          <div>
+            <span>Research Interests</span>
             <ul>
-            <li className="about-activity">
-              + Machine Learning in Signal Processing
-            </li>
-            <li className="about-activity">
-              + Probabilistic Modeling and High Dimensional Data Analytics
-            </li>
-            <li className="about-activity">
-              + EEG Signal Processing and Analysis
-            </li>
-          </ul>
-            <br />
-            Outside of academics, my hobbies include:
-          </p>
-          <ul>
-            <li className="about-activity">
-              + Making Music
-            </li>
-            <li className="about-activity" style={{ display: "flex", alignItems: "center" }}>
-              + Going to the Gym&nbsp;
-              <span style={{ display: "flex", alignItems: "center" }}>
-                (255 Bench, 365 Squat, 420 Deadlift)
-                <img
-                  src='https://nukocities.neocities.org/nuko/act/cat527.gif'
-                  alt="flex"
-                  style={{ width: "25px", marginLeft: "8px" }}
-                />
-              </span>
-            </li>
-            <li className="about-activity">
-              + Surfing (Ponto, Swamis, La Jolla Shores, Oceanside Harbor)
-            </li>
-          </ul>
-          <br />
-            Current courses I am taking:
-          <ul>
-            <li className="about-activity">
-              + ISYE 6420: Bayesian Statistics
-            </li>
-            <li className="about-activity">
-              + ISYE 6525: High Dimensional Data Analytics
-            </li>
-            <li className="about-activity">
-              *<a href="https://pe.gatech.edu/degrees/analytics/curriculum" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>OMSA Curriculum</a>
-            </li>
-          </ul>
-        </blockquote>
+              <li>Machine Learning for Scientific Data</li>
+              <li>Bayesian Probabilistic Modeling in Signal Processing</li>
+              <li>EEG Signal Processing and Analysis</li>
+              <li>Computational Neuroscience and Brain-Computer Interfaces</li>
+            </ul>
+          </div>
+          <div>
+            <span>Relevant Coursework</span>
+            <ul>
+              <li>Bayesian Statistics</li>
+              <li>High Dimensional Data Analytics</li>
+              <li>Data and Visual Analytics</li>
+              <li>
+                <a
+                  href="https://pe.gatech.edu/degrees/analytics/curriculum"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  OMSA Curriculum
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="about-personal-note">
+          Outside of academics, I make music, hike, train consistently, and surf
+          around North County and La Jolla.
+        </p>
       </Card.Body>
     </Card>
   );

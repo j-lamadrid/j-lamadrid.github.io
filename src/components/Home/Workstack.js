@@ -3,11 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiNasa
 } from "react-icons/si";
-import {
-  DiAws,
-  DiGoogleCloudPlatform,
-  DiMicrosoftazure,
-} from "react-icons/di";
+import centeneLogo from "../../Assets/CNC_BIG.D-ae819181.png";
 import ucsdHealthLogo from "../../Assets/image.png";
 import brainLogo from "../../Assets/image (1).png";
 
@@ -26,12 +22,24 @@ function Workstack() {
     height: "auto",
   };
 
+  const wideImgStyle = {
+    width: "100%",
+    height: "auto",
+    maxHeight: "90px",
+    objectFit: "contain",
+  };
+
   const iconStyle = {
     fontSize: "60px",
   };
 
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={6} md={3} lg={2} className="tech-icons work-logo-tile">
+        <div style={iconBoxStyle}>
+          <img src={centeneLogo} alt="Centene Corporation Logo" style={wideImgStyle} />
+        </div>
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <div style={iconBoxStyle}>
           <SiNasa style={iconStyle} />

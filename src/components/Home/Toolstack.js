@@ -2,21 +2,14 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
   SiPycharm,
   SiIntellijidea,
   SiAbletonlive,
   SiWindows,
-  SiJupyter,
   SiMicrosoftazure
 } from "react-icons/si";
 import {
   DiAws,
-  DiGoogleCloudPlatform,
-  DiMicrosoftazure,
 } from "react-icons/di";
 
 function Toolstack() {

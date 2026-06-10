@@ -1,34 +1,35 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFund,
-  AiOutlineUser,
   AiOutlineRobot,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
 
+const brandGif =
+  "https://nukochannel.neocities.org/NukoImg/Costume/Jobs/nukoScientist.gif";
+
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
+  useEffect(() => {
+    function scrollHandler() {
+      updateNavbar(window.scrollY >= 20);
     }
-  }
 
-  window.addEventListener("scroll", scrollHandler);
+    scrollHandler();
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
 
   return (
     <Navbar
@@ -38,9 +39,9 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <img src='https://nukochannel.neocities.org/NukoImg/Costume/Jobs/nukoScientist.gif' 
-          alt="brand" width={40} />
+        <Navbar.Brand as={Link} to="/" className="d-flex brand-lockup">
+          <img src={brandGif} alt="Nuko scientist" width={34} />
+          <span>Jacob Lamadrid</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -73,7 +74,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/projects"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFund
@@ -97,6 +98,8 @@ function NavBar() {
               <Button
                 href="https://github.com/j-lamadrid/website"
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open website source repository"
                 className="fork-btn-inner"
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}

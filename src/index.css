@@ -1,8 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pixelify+Sans:wght@400..700&display=swap");
+
+:root {
+  --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+  --font-display: "Pixelify Sans", "Inter", sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: "Pixelify Sans", serif !important;
+  font-family: var(--font-sans) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to left, rgb(53, 37, 14), rgb(53, 46, 26));
+}
+
+h1,
+h2,
+h3,
+.navbar,
+.section-kicker,
+.Typewriter__wrapper {
+  font-family: var(--font-display) !important;
 }
