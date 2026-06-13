@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaPause, FaPlay } from "react-icons/fa";
 import { FiSkipBack, FiSkipForward } from "react-icons/fi";
 import Particle from "../Particle";
+import AmbientSynth from "./AmbientSynth";
 
 function formatTime(seconds) {
   if (!Number.isFinite(seconds)) {
@@ -480,6 +481,8 @@ function Music() {
         <section className="section-intro reveal-up">
           <p className="section-kicker">Music</p>
         </section>
+
+        <AmbientSynth />
 
         <div className="music-dance-strip reveal-up delay-1" aria-label="Dancing Nuko animations">
           {danceGifs.map((gif) => (

@@ -2084,6 +2084,424 @@ canvas {
   row-gap: 1.5rem;
 }
 
+.ambient-synth-panel {
+  background: linear-gradient(145deg, rgba(38, 30, 20, 0.82), rgba(34, 20, 42, 0.72));
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 24px 58px rgba(0, 0, 0, 0.24);
+  margin: 0 auto 1.8rem;
+  overflow: hidden;
+  padding: 1.25rem;
+  position: relative;
+  text-align: left;
+  z-index: 2;
+}
+
+.ambient-synth-panel::before {
+  background: linear-gradient(90deg, var(--imp-text-color), var(--cool-accent));
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.ambient-synth-head {
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.ambient-synth-head h2 {
+  color: white;
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.ambient-synth-power {
+  align-items: center;
+  border-radius: 8px;
+  display: inline-flex;
+  font-weight: 800;
+  gap: 0.45rem;
+  min-height: 42px;
+  transition: background-color 0.24s ease, border-color 0.24s ease, transform 0.24s ease;
+}
+
+.ambient-synth-power {
+  background: #866d36;
+  border: 1px solid #a98b4e;
+  color: white;
+  flex: 0 0 auto;
+  padding: 0.62rem 0.95rem;
+}
+
+.ambient-synth-power.active,
+.ambient-synth-power:hover {
+  background: rgba(216, 92, 255, 0.18);
+  border-color: rgba(216, 92, 255, 0.58);
+  transform: translateY(-2px);
+}
+
+.ambient-synth-grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.ambient-synth-module {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(216, 92, 255, 0.18);
+  border-radius: 8px;
+  min-width: 0;
+  padding: 0.9rem;
+}
+
+.ambient-synth-module h3 {
+  color: white;
+  font-size: 0.94rem;
+  font-weight: 900;
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+}
+
+.ambient-synth-control {
+  display: block;
+  margin-bottom: 0.7rem;
+}
+
+.ambient-synth-control:last-child {
+  margin-bottom: 0;
+}
+
+.ambient-synth-control span {
+  align-items: center;
+  color: rgba(255, 250, 241, 0.82);
+  display: flex;
+  font-size: 0.84rem;
+  font-weight: 800;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+}
+
+.ambient-synth-control em {
+  color: var(--imp-text-color);
+  font-style: normal;
+  font-weight: 900;
+  margin-left: 0.7rem;
+}
+
+.ambient-synth-control input[type="range"] {
+  accent-color: var(--cool-accent);
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.ambient-patch-row {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
+}
+
+.ambient-patch-row span {
+  aspect-ratio: 1;
+  background: rgba(216, 92, 255, 0.28);
+  border: 1px solid rgba(216, 92, 255, 0.52);
+  border-radius: 50%;
+  box-shadow: 0 0 16px rgba(216, 92, 255, 0.18);
+}
+
+.ambient-piano-panel {
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(216, 92, 255, 0.18);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 0.95rem;
+}
+
+.ambient-piano-head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.ambient-piano-head h3 {
+  color: white;
+  font-size: 0.94rem;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.ambient-piano-head span {
+  background: rgba(216, 92, 255, 0.14);
+  border: 1px solid rgba(216, 92, 255, 0.34);
+  border-radius: 8px;
+  color: var(--imp-text-color);
+  font-size: 0.82rem;
+  font-weight: 900;
+  min-width: 54px;
+  padding: 0.25rem 0.45rem;
+  text-align: center;
+}
+
+.ambient-piano-roll {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: repeat(24, minmax(28px, 1fr));
+  overflow-x: auto;
+  padding-bottom: 0.15rem;
+}
+
+.ambient-piano-roll button {
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.66rem;
+  font-weight: 900;
+  min-height: 58px;
+  padding: 0.3rem 0.12rem;
+  position: relative;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease,
+    transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.ambient-piano-roll button span {
+  bottom: 0.28rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.ambient-piano-roll button.natural {
+  background: rgba(255, 250, 241, 0.82);
+  border: 1px solid rgba(255, 250, 241, 0.46);
+  color: rgba(25, 17, 8, 0.92);
+}
+
+.ambient-piano-roll button.sharp {
+  background: rgba(18, 11, 22, 0.92);
+  border: 1px solid rgba(216, 92, 255, 0.24);
+  color: rgba(255, 250, 241, 0.86);
+  min-height: 42px;
+}
+
+.ambient-piano-roll button:hover {
+  border-color: rgba(216, 92, 255, 0.62);
+  transform: translateY(-2px);
+}
+
+.ambient-piano-roll button.root {
+  box-shadow: inset 0 0 0 2px rgba(216, 92, 255, 0.62), 0 0 18px rgba(216, 92, 255, 0.16);
+}
+
+.ambient-piano-roll button.playing {
+  background: rgba(216, 92, 255, 0.58);
+  border-color: rgba(216, 92, 255, 0.95);
+  color: white;
+  box-shadow: 0 0 18px rgba(216, 92, 255, 0.32);
+}
+
+.ambient-arp-panel {
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(216, 92, 255, 0.18);
+  border-radius: 8px;
+  margin-top: 1rem;
+  padding: 0.95rem;
+}
+
+.ambient-arp-head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.ambient-arp-head h3 {
+  color: white;
+  font-size: 0.94rem;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.ambient-arp-head button,
+.ambient-arp-patterns button {
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: rgba(255, 250, 241, 0.84);
+  font-weight: 900;
+  min-height: 36px;
+  padding: 0.42rem 0.7rem;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.ambient-arp-head button:hover,
+.ambient-arp-patterns button:hover,
+.ambient-arp-head button.active,
+.ambient-arp-patterns button.active {
+  background: rgba(216, 92, 255, 0.16);
+  border-color: rgba(216, 92, 255, 0.56);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.ambient-arp-patterns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.ambient-sequencer {
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(216, 92, 255, 0.18);
+  border-radius: 8px;
+  margin-top: 1rem;
+  overflow-x: auto;
+  padding: 0.95rem;
+}
+
+.ambient-sequencer-head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.ambient-sequencer-head h3 {
+  color: white;
+  font-size: 0.94rem;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.ambient-sequencer-head span {
+  background: rgba(216, 92, 255, 0.14);
+  border: 1px solid rgba(216, 92, 255, 0.34);
+  border-radius: 8px;
+  color: var(--imp-text-color);
+  font-size: 0.82rem;
+  font-weight: 900;
+  min-width: 42px;
+  padding: 0.25rem 0.45rem;
+  text-align: center;
+}
+
+.ambient-step-index,
+.ambient-step-row {
+  display: grid;
+  gap: 0.35rem;
+  grid-template-columns: 88px repeat(16, minmax(18px, 1fr));
+  min-width: 680px;
+}
+
+.ambient-step-index {
+  color: rgba(255, 250, 241, 0.5);
+  font-size: 0.68rem;
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+  text-align: center;
+}
+
+.ambient-step-index::before {
+  content: "";
+}
+
+.ambient-step-index span {
+  border-radius: 4px;
+  padding: 0.12rem 0;
+}
+
+.ambient-step-index span.current {
+  background: rgba(216, 92, 255, 0.16);
+  color: white;
+}
+
+.ambient-step-grid {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.ambient-step-row {
+  align-items: center;
+}
+
+.ambient-step-row > span {
+  color: rgba(255, 250, 241, 0.84);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.ambient-step-row > div {
+  display: contents;
+}
+
+.ambient-step-row button {
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  cursor: pointer;
+  min-height: 24px;
+  transition: background-color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.ambient-step-row button:hover {
+  border-color: rgba(216, 92, 255, 0.44);
+  transform: translateY(-1px);
+}
+
+.ambient-step-row button.active {
+  background: rgba(222, 184, 131, 0.48);
+  border-color: rgba(222, 184, 131, 0.76);
+  box-shadow: inset 0 0 10px rgba(222, 184, 131, 0.12);
+}
+
+.ambient-step-row button.current {
+  border-color: rgba(216, 92, 255, 0.88);
+  box-shadow: 0 0 12px rgba(216, 92, 255, 0.26);
+}
+
+.ambient-step-row button.active.current {
+  background: rgba(216, 92, 255, 0.62);
+  border-color: rgba(216, 92, 255, 0.92);
+}
+
+.ambient-drum-shape {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.ambient-drum-module {
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(216, 92, 255, 0.18);
+  border-radius: 8px;
+  min-width: 0;
+  padding: 0.9rem;
+}
+
+.ambient-drum-module h3 {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+}
+
 .music-dance-strip {
   align-items: flex-end;
   display: flex;
@@ -2299,6 +2717,14 @@ canvas {
     margin: 1rem auto 0;
   }
 
+  .ambient-synth-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ambient-drum-shape {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .music-track-list {
     margin-top: 0;
   }
@@ -2387,6 +2813,23 @@ canvas {
 
   .music-player-header {
     flex-direction: column;
+  }
+
+  .ambient-synth-head {
+    flex-direction: column;
+  }
+
+  .ambient-synth-power {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ambient-synth-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ambient-drum-shape {
+    grid-template-columns: 1fr;
   }
 
   .music-dance-strip {
