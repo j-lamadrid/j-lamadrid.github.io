@@ -9,6 +9,8 @@ function Type() {
           "Analytics Graduate Student",
           "Machine Learning Researcher",
           "Scientific Software Developer",
+          "Computational Neuroscientist",
+          "Super Cool!",
         ],
         autoStart: true,
         loop: true,

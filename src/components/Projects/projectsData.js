@@ -34,7 +34,7 @@ const projects = [
   },
   {
     title: "EEG2Audio",
-    domain: "NeuroAI Research",
+    domain: "NeuroAI",
     type: "Research",
     summary:
       "Audio reconstruction research from EEG signals using spectrogram representations and deep generative modeling workflows.",
@@ -48,7 +48,7 @@ const projects = [
   {
     title: "Audio Texture Synthesis",
     domain: "Signal Processing",
-    type: "Research",
+    type: "Applied ML",
     summary:
       "Audio texture generation using PyTorch and TorchAudio by adapting image texture synthesis and style-transfer methods to spectrograms.",
     impact:
@@ -61,7 +61,7 @@ const projects = [
   },
   {
     title: "TrackiT!",
-    domain: "Health Software",
+    domain: "Health Application",
     type: "Software",
     summary:
       "Cross-platform clinical tracking app for longitudinal developmental trends across neurodevelopmental studies.",
@@ -98,8 +98,20 @@ const projects = [
       github: "https://github.com/j-lamadrid/mri-tumor-classification",
     },
   },
+   {
+    title: "Meteor Instrument (WIP)",
+    domain: "Radio Astronomy & Meteorology",
+    type: "Engineering",
+    summary:
+      "Developing a standalone embedded instrument on Raspberry Pi and Arduino display hardware for real-time radio astronomy and meteorology data capture, processing, and visualization.",
+    impact:
+      "Integrates embedded systems design, signal processing, and data visualization for a singular scientific instrument.",
+    stack: ["Python", "C++", "Raspberry Pi", "Arduino", "Embedded Systems", "Signal Processing", "RTL-SDR"],
+    links: {
+    },
+  },
 ];
 
-export const projectFilters = ["All", "R/Shiny", "Research", "Applied ML", "Software"];
+export const projectFilters = ["All", "R/Shiny", "Research", "Applied ML", "Software", "Engineering"];
 
 export default projects;

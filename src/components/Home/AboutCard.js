@@ -52,25 +52,22 @@ function AboutCard() {
           <div>
             <span>Relevant Coursework</span>
             <ul>
+              <li>Deep Learning</li>
+              <li>Advanced Machine Learning Methods</li>
               <li>Bayesian Statistics</li>
               <li>High Dimensional Data Analytics</li>
+              <li>Systems for Scalable Analytics</li>
               <li>Data and Visual Analytics</li>
-              <li>
-                <a
-                  href="https://pe.gatech.edu/degrees/analytics/curriculum"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  OMSA Curriculum
-                </a>
-              </li>
+              <li>Neural Data Science</li>
+              <li>Cognitive/Systems Neuroscience</li>
             </ul>
           </div>
         </div>
 
         <p className="about-personal-note">
           Outside of academics, I make music, hike, train consistently, and surf
-          around North County and La Jolla.
+          around North County and La Jolla. Currently reading Hard-Boiled Wonderland 
+          and the End of the World by Haruki Murakami.
         </p>
       </Card.Body>
     </Card>

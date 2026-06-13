@@ -1,6 +1,6 @@
 const resumeData = {
   name: "Jacob Lamadrid",
-  headline: "Machine Learning | Data Science | Systems Analytics",
+  headline: "Machine Learning | Data Science | Systems Analytics | Research",
   contact: [
     {
       label: "Phone",
@@ -19,7 +19,7 @@ const resumeData = {
     },
     {
       label: "LinkedIn",
-      value: "linkedin.com/in/j-lamadrid",
+      value: "linkedin.com/in/jlamadrid",
       href: "https://linkedin.com/in/jlamadrid",
     },
   ],
