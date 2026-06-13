@@ -20,7 +20,7 @@ const resumeData = {
     {
       label: "LinkedIn",
       value: "linkedin.com/in/j-lamadrid",
-      href: "https://linkedin.com/in/j-lamadrid",
+      href: "https://linkedin.com/in/jlamadrid",
     },
   ],
   education: [
@@ -30,7 +30,7 @@ const resumeData = {
       location: "Atlanta, GA",
       date: "Expected: Dec 2027",
       details: [
-        "Focus: Computational Modeling & Statistical Methods",
+        "Focus: Modeling, Simulation, and Optimization",
         "Coursework: Bayesian Statistics, High Dimensional Data Analytics, Data & Visual Analytics",
       ],
     },
@@ -54,7 +54,7 @@ const resumeData = {
       date: "May 2026 - Aug 2026",
       bullets: [
         "Developed end-to-end data engineering pipelines unifying Internal Audit and claims warehouse sources into a common schema of 127K+ claims for anomaly detection on large-scale health insurance claims data.",
-        "Independently designed and implemented an AutoEncoder-based weakly-supervised anomaly detection method in PyTorch, achieving an 8x increase in precision of identifying erroneous claims over the prior baseline on a 50:1 class-imbalanced dataset.",
+        "Independently designed and implemented an AutoEncoder-based weakly-supervised anomaly detection method in PyTorch, achieving an 10x increase in precision of identifying erroneous claims over the prior baseline on a 50:1 class-imbalanced dataset.",
       ],
     },
     {
