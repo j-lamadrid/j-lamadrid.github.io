@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaPause, FaPlay } from "react-icons/fa";
+import { FiChevronDown } from "react-icons/fi";
 
 const defaultSettings = {
   rootNote: 40,
@@ -677,6 +678,7 @@ function AmbientSynth() {
   const [activeArpNote, setActiveArpNote] = useState(defaultSettings.rootNote);
   const [isArpEnabled, setIsArpEnabled] = useState(true);
   const [arpPatternKey, setArpPatternKey] = useState("up");
+  const [isExpanded, setIsExpanded] = useState(false);
   const [isRunning, setIsRunning] = useState(false);
   const [error, setError] = useState("");
   const graphRef = useRef(null);
@@ -929,11 +931,21 @@ function AmbientSynth() {
   }
 
   return (
-    <article className="ambient-synth-panel reveal-up">
+    <article className={`ambient-synth-panel reveal-up ${isExpanded ? "expanded" : "collapsed"}`}>
       <div className="ambient-synth-head">
-        <div>
-          <p className="section-kicker">Synth + Sequencer</p>
-        </div>
+        <button
+          type="button"
+          className="ambient-synth-toggle"
+          aria-expanded={isExpanded}
+          aria-controls="ambient-synth-controls"
+          onClick={() => setIsExpanded((expanded) => !expanded)}
+        >
+          <span>
+            <p className="section-kicker">Synth + Sequencer</p>
+            <strong>{isExpanded ? "Hide modular controls" : "Open modular synth"}</strong>
+          </span>
+          <FiChevronDown className="ambient-synth-chevron" aria-hidden="true" />
+        </button>
         <button
           type="button"
           className={`ambient-synth-power ${isRunning ? "active" : ""}`}
@@ -944,6 +956,8 @@ function AmbientSynth() {
         </button>
       </div>
 
+      {isExpanded && (
+        <div id="ambient-synth-controls" className="ambient-synth-body">
       <section className="ambient-piano-panel" aria-label="Root note piano roll">
         <div className="ambient-piano-head">
           <h3>Root Note</h3>
@@ -1136,6 +1150,8 @@ function AmbientSynth() {
           </section>
         ))}
       </section>
+        </div>
+      )}
 
       {error && <p className="music-status">{error}</p>}
     </article>
