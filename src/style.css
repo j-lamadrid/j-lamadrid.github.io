@@ -2066,6 +2066,607 @@ canvas {
 }
 
 /* --------- */
+/* Meteor Demo */
+/* --------- */
+
+.meteor-demo-section {
+  color: white !important;
+}
+
+.meteor-demo-shell,
+.meteor-demo-stage,
+.meteor-feature-grid {
+  position: relative;
+  z-index: 2;
+}
+
+.meteor-demo-back {
+  display: inline-flex;
+  margin-bottom: 1.25rem;
+}
+
+.meteor-demo-stage {
+  --meteor-signal: 0;
+  --meteor-image-level: 0;
+  background: rgba(18, 10, 16, 0.94);
+  border: 2px solid rgba(216, 92, 255, 0.3);
+  border-radius: 8px;
+  box-shadow: 8px 8px 0 rgba(9, 6, 10, 0.62), 0 24px 58px rgba(0, 0, 0, 0.26);
+  height: min(70vh, 650px);
+  min-height: 560px;
+  overflow: hidden;
+}
+
+.meteor-demo-stage::before {
+  background:
+    repeating-linear-gradient(90deg, rgba(216, 92, 255, 0.055) 0 2px, transparent 2px 24px),
+    repeating-linear-gradient(0deg, rgba(222, 184, 131, 0.035) 0 2px, transparent 2px 24px);
+  content: "";
+  inset: 0;
+  opacity: 0.7;
+  pointer-events: none;
+  position: absolute;
+}
+
+.meteor-orbit-arc {
+  border: 2px dashed rgba(222, 184, 131, 0.35);
+  border-bottom: 0;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  bottom: 13%;
+  height: 64%;
+  left: 6%;
+  position: absolute;
+  right: 6%;
+  z-index: 1;
+}
+
+.meteor-earth {
+  background: #241612;
+  border: 2px solid rgba(222, 184, 131, 0.34);
+  border-bottom: 0;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  bottom: -38%;
+  height: 58%;
+  left: -10%;
+  overflow: hidden;
+  position: absolute;
+  right: -10%;
+  z-index: 2;
+}
+
+.meteor-earth span {
+  background: rgba(216, 92, 255, 0.14);
+  border: 1px solid rgba(222, 184, 131, 0.18);
+  display: block;
+  height: 18px;
+  position: absolute;
+  width: 86px;
+}
+
+.meteor-earth span:nth-child(1) {
+  left: 22%;
+  top: 23%;
+}
+
+.meteor-earth span:nth-child(2) {
+  right: 24%;
+  top: 34%;
+  width: 128px;
+}
+
+.meteor-earth span:nth-child(3) {
+  left: 46%;
+  top: 48%;
+  width: 72px;
+}
+
+.meteor-satellite {
+  align-items: center;
+  background: #2d1a24;
+  border: 2px solid rgba(216, 92, 255, 0.52);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.32);
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: left 0.08s linear, top 0.08s linear;
+  width: 56px;
+  z-index: 5;
+}
+
+.meteor-satellite span {
+  color: rgba(255, 250, 241, 0.92);
+  font-family: "Courier New", monospace;
+  font-size: 0.74rem;
+  font-weight: 900;
+}
+
+.meteor-satellite i,
+.meteor-satellite i::before {
+  background: rgba(222, 184, 131, 0.36);
+  border: 1px solid rgba(216, 92, 255, 0.42);
+  content: "";
+  height: 18px;
+  position: absolute;
+  top: 10px;
+  width: 32px;
+}
+
+.meteor-satellite i {
+  left: -38px;
+}
+
+.meteor-satellite i::before {
+  left: 96px;
+  top: -1px;
+}
+
+.meteor-signal-beam {
+  bottom: 24%;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  height: 44%;
+  left: 50%;
+  opacity: calc(var(--meteor-signal) * 0.82);
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 31%;
+  z-index: 3;
+}
+
+.meteor-signal-beam span {
+  background: rgba(216, 92, 255, 0.16);
+  border: 1px solid rgba(222, 184, 131, 0.18);
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 33.33%;
+}
+
+.meteor-signal-beam span:nth-child(1) {
+  left: 0;
+}
+
+.meteor-signal-beam span:nth-child(2) {
+  left: 33.33%;
+}
+
+.meteor-signal-beam span:nth-child(3) {
+  right: 0;
+}
+
+.meteor-ground-array {
+  bottom: 17%;
+  height: 96px;
+  left: 25%;
+  position: absolute;
+  width: 120px;
+  z-index: 6;
+}
+
+.meteor-antenna-dish {
+  border: 2px solid rgba(222, 184, 131, 0.7);
+  border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  height: 38px;
+  left: 25px;
+  position: absolute;
+  top: 0;
+  transform: rotate(-18deg);
+  width: 70px;
+}
+
+.meteor-antenna-mast {
+  background: rgba(222, 184, 131, 0.7);
+  height: 62px;
+  left: 58px;
+  position: absolute;
+  top: 30px;
+  width: 4px;
+}
+
+.meteor-antenna-base {
+  background: #3a2019;
+  border: 2px solid rgba(216, 92, 255, 0.34);
+  bottom: 0;
+  height: 16px;
+  left: 35px;
+  position: absolute;
+  width: 52px;
+}
+
+.meteor-data-bus {
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(222, 184, 131, 0.28);
+  bottom: 23%;
+  height: 12px;
+  left: 34%;
+  position: absolute;
+  right: 35%;
+  z-index: 5;
+}
+
+.meteor-data-bus span {
+  background: rgba(216, 92, 255, 0.78);
+  display: block;
+  height: 100%;
+  transition: width 0.08s linear;
+}
+
+.meteor-instrument-unit {
+  background: #241612;
+  border: 2px solid rgba(216, 92, 255, 0.34);
+  border-radius: 8px;
+  bottom: 10%;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.32);
+  padding: 0.9rem;
+  position: absolute;
+  right: 7%;
+  width: min(300px, 30%);
+  z-index: 6;
+}
+
+.meteor-unit-top,
+.meteor-unit-readout {
+  color: rgba(222, 184, 131, 0.86);
+  display: flex;
+  font-family: "Courier New", monospace;
+  font-size: 0.72rem;
+  font-weight: 900;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.meteor-unit-screen {
+  background: #211225;
+  border: 2px solid rgba(216, 92, 255, 0.4);
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0.65rem 0;
+  padding: 0.45rem;
+}
+
+.meteor-unit-screen span {
+  aspect-ratio: 1;
+  display: block;
+  transition: opacity 0.08s linear;
+}
+
+.meteor-demo-stage.receiving .meteor-ground-array {
+  filter: drop-shadow(0 0 10px rgba(216, 92, 255, 0.28));
+}
+
+.meteor-feature-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1.2rem;
+}
+
+.meteor-feature-panel {
+  background: rgba(36, 22, 18, 0.94);
+  border: 2px solid rgba(216, 92, 255, 0.28);
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 rgba(9, 6, 10, 0.58);
+  min-height: 360px;
+  overflow: hidden;
+  padding: 1rem;
+  position: relative;
+}
+
+.meteor-feature-panel::before {
+  background:
+    repeating-linear-gradient(90deg, rgba(216, 92, 255, 0.055) 0 2px, transparent 2px 18px),
+    repeating-linear-gradient(0deg, rgba(222, 184, 131, 0.035) 0 2px, transparent 2px 18px);
+  content: "";
+  inset: 0;
+  opacity: 0.56;
+  pointer-events: none;
+  position: absolute;
+}
+
+.meteor-feature-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.meteor-feature-panel h2 {
+  color: rgba(255, 250, 241, 0.92);
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  margin: 0.8rem 0 1rem;
+  text-transform: uppercase;
+}
+
+.meteor-panel-top,
+.meteor-panel-footer {
+  color: rgba(222, 184, 131, 0.86);
+  display: flex;
+  font-family: "Courier New", monospace;
+  font-size: 0.68rem;
+  font-weight: 900;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.meteor-panel-footer {
+  margin-top: 0.9rem;
+}
+
+.meteor-telemetry-stack {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1.1rem;
+}
+
+.meteor-telemetry-copy {
+  align-items: flex-end;
+  color: rgba(255, 250, 241, 0.84);
+  display: flex;
+  font-family: "Courier New", monospace;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+}
+
+.meteor-telemetry-copy span {
+  color: rgba(222, 184, 131, 0.78);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.meteor-telemetry-copy strong {
+  color: rgba(255, 250, 241, 0.95);
+  font-size: 1.18rem;
+  font-weight: 900;
+}
+
+.meteor-telemetry-bar {
+  background: rgba(18, 10, 16, 0.8);
+  border: 2px solid rgba(216, 92, 255, 0.28);
+  height: 18px;
+  padding: 2px;
+}
+
+.meteor-telemetry-bar span {
+  background: rgba(216, 92, 255, 0.72);
+  box-shadow: 0 0 0 1px rgba(222, 184, 131, 0.18);
+  display: block;
+  height: 100%;
+  transition: width 0.12s linear;
+}
+
+.meteor-scatter-sky {
+  background: rgba(18, 10, 16, 0.86);
+  border: 2px solid rgba(216, 92, 255, 0.25);
+  height: 150px;
+  margin: 0.5rem 0 0.85rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.meteor-scatter-atmosphere {
+  background: rgba(216, 92, 255, 0.08);
+  border-top: 2px solid rgba(222, 184, 131, 0.48);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  bottom: -28%;
+  height: 52%;
+  left: -12%;
+  position: absolute;
+  right: -12%;
+}
+
+.scatter-meteor {
+  background: rgba(222, 184, 131, 0.82);
+  border: 1px solid rgba(255, 250, 241, 0.42);
+  display: block;
+  height: 10px;
+  position: absolute;
+  transition: left 0.08s linear, opacity 0.08s linear, top 0.08s linear, transform 0.08s linear;
+  width: 10px;
+  z-index: 2;
+}
+
+.scatter-meteor i {
+  background: rgba(216, 92, 255, 0.36);
+  display: block;
+  height: 4px;
+  position: absolute;
+  right: 8px;
+  top: 2px;
+  width: calc(18px + var(--burn) * 20px);
+}
+
+.scatter-meteor.burning {
+  background: rgba(216, 92, 255, 0.96);
+  box-shadow: 0 0 0 3px rgba(216, 92, 255, 0.16), 0 0 14px rgba(216, 92, 255, 0.32);
+}
+
+.meteor-scatter-screen {
+  background: rgba(18, 10, 16, 0.72);
+  border: 2px solid rgba(216, 92, 255, 0.28);
+  padding: 0.55rem;
+}
+
+.meteor-scatter-grid {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.meteor-scatter-grid span {
+  aspect-ratio: 1;
+  background: rgba(216, 92, 255, 0.74);
+  display: block;
+  transition: opacity 0.08s linear;
+}
+
+.meteor-star-map {
+  background: rgba(18, 10, 16, 0.86);
+  border: 2px solid rgba(216, 92, 255, 0.25);
+  height: 230px;
+  overflow: hidden;
+  position: relative;
+}
+
+.meteor-star-map::before {
+  background:
+    repeating-linear-gradient(90deg, rgba(222, 184, 131, 0.04) 0 1px, transparent 1px 28px),
+    repeating-linear-gradient(0deg, rgba(216, 92, 255, 0.055) 0 1px, transparent 1px 28px);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.meteor-star-sweep {
+  background: rgba(216, 92, 255, 0.72);
+  bottom: 0;
+  box-shadow: 0 0 16px rgba(216, 92, 255, 0.42);
+  display: block;
+  position: absolute;
+  top: 0;
+  transition: left 0.08s linear;
+  width: 2px;
+  z-index: 2;
+}
+
+.meteor-star-dot {
+  background: rgba(255, 250, 241, 0.96);
+  box-shadow: 0 0 8px rgba(216, 92, 255, 0.36);
+  display: block;
+  position: absolute;
+  transition: left 0.08s linear, opacity 0.08s linear, top 0.08s linear;
+  z-index: 3;
+}
+
+.meteor-star-link {
+  background: rgba(222, 184, 131, 0.26);
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform-origin: 0 50%;
+  z-index: 1;
+}
+
+.meteor-star-target {
+  border: 2px solid rgba(216, 92, 255, 0.68);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.28);
+  display: block;
+  height: 34px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: left 0.08s linear, top 0.08s linear;
+  width: 34px;
+  z-index: 4;
+}
+
+.meteor-star-target::before,
+.meteor-star-target::after {
+  background: rgba(222, 184, 131, 0.6);
+  content: "";
+  position: absolute;
+}
+
+.meteor-star-target::before {
+  height: 2px;
+  left: 6px;
+  right: 6px;
+  top: 15px;
+}
+
+.meteor-star-target::after {
+  bottom: 6px;
+  left: 15px;
+  top: 6px;
+  width: 2px;
+}
+
+@media (max-width: 1199px) {
+  .meteor-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .meteor-feature-panel {
+    min-height: auto;
+  }
+
+  .meteor-scatter-sky,
+  .meteor-star-map {
+    height: 220px;
+  }
+}
+
+@media (max-width: 991px) {
+  .meteor-demo-stage {
+    height: 620px;
+  }
+
+  .meteor-ground-array {
+    left: 16%;
+  }
+
+  .meteor-data-bus {
+    left: 28%;
+    right: 43%;
+  }
+
+  .meteor-instrument-unit {
+    right: 5%;
+    width: min(300px, 38%);
+  }
+}
+
+@media (max-width: 767px) {
+  .meteor-demo-stage {
+    height: 680px;
+  }
+
+  .meteor-orbit-arc {
+    left: -12%;
+    right: -12%;
+  }
+
+  .meteor-satellite {
+    width: 48px;
+  }
+
+  .meteor-ground-array {
+    bottom: 38%;
+    left: calc(50% - 60px);
+  }
+
+  .meteor-data-bus {
+    bottom: 34%;
+    left: 24%;
+    right: 24%;
+  }
+
+  .meteor-instrument-unit {
+    bottom: 8%;
+    left: 12%;
+    right: 12%;
+    width: auto;
+  }
+
+  .meteor-earth {
+    bottom: -28%;
+    height: 44%;
+  }
+
+  .meteor-feature-panel {
+    padding: 0.85rem;
+  }
+
+  .meteor-scatter-sky,
+  .meteor-star-map {
+    height: 190px;
+  }
+}
+
+/* --------- */
 /* Music */
 /* --------- */
 

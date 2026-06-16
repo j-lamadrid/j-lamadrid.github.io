@@ -8,7 +8,7 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <div className="footer-inner">
-        <p>Jacob Lamadrid | Data science, ML research, and scientific software</p>
+        <p>Jacob Lamadrid</p>
         <div className="footer-links">
           <a
             href="https://github.com/j-lamadrid"

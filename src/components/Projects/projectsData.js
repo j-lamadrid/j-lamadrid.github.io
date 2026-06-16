@@ -108,7 +108,9 @@ const projects = [
       "Integrates embedded systems design, signal processing, and data visualization for a singular scientific instrument.",
     stack: ["Python", "C++", "Raspberry Pi", "Arduino", "Embedded Systems", "Signal Processing", "RTL-SDR"],
     links: {
+      demo: "/projects/meteor-instrument-demo",
     },
+    demoLabel: "Prototype",
   },
 ];
 

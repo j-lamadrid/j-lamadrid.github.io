@@ -4,6 +4,11 @@ import Button from "react-bootstrap/Button";
 import { AiOutlineFileText } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
+import { Link } from "react-router-dom";
+
+function isInternalLink(url) {
+  return typeof url === "string" && url.startsWith("/") && !url.startsWith("//");
+}
 
 function ProjectCards(props) {
   const links = props.links || {
@@ -74,12 +79,12 @@ function ProjectCards(props) {
           {links.demo && (
             <Button
               variant="primary"
-              href={links.demo}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...(isInternalLink(links.demo)
+                ? { as: Link, to: links.demo }
+                : { href: links.demo, target: "_blank", rel: "noopener noreferrer" })}
             >
               <FiExternalLink />
-              <span>Demo</span>
+              <span>{props.demoLabel || "Demo"}</span>
             </Button>
           )}
         </div>

@@ -9,6 +9,7 @@ import Learning from "./components/Learning/Learning";
 import SupervisedLearning from "./components/Learning/Pages/SupervisedLearning";
 import LearningTopicPage from "./components/Learning/Pages/LearningTopicPage";
 import Music from "./components/Music/Music";
+import MeteorInstrumentDemo from "./components/Projects/MeteorInstrumentDemo";
 import {
   BrowserRouter as Router,
   Route,
@@ -35,6 +36,7 @@ function App() {
           <Route path="/learning" element={<Learning />} />
           <Route path="/learning/:topicSlug" element={<LearningTopicPage />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/projects/meteor-instrument-demo" element={<MeteorInstrumentDemo />} />
           <Route path="*" element={<Navigate to="/"/>} />
           <Route path="/SupervisedLearning" element={<SupervisedLearning />} />
         </Routes>
