@@ -7,7 +7,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import Particle from "../Particle";
 import About from "./About";
 import Type from "./Type";
-import pdf from "../../Assets/Jacob_Lamadrid_Resume.pdf";
+import pdf from "../../Assets/jacob_lamadrid_resume.pdf";
 
 const homeGif =
   "https://nukochannel.neocities.org/NukoImg/Stickers/nukoStickerIRLCat.gif";
@@ -21,7 +21,7 @@ function Home() {
           <Row className="align-items-center">
             <Col xs={12} lg={7} className="home-header reveal-up">
               <p className="home-eyebrow">
-                Data Science | Machine Learning | Scientific Software | Research
+                Data Science | Machine Learning | Operations Research | Signal Processing
               </p>
               <h1 className="heading-name">
                 Jacob <strong className="main-name">Lamadrid</strong>

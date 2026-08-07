@@ -1,34 +1,20 @@
 import eegReport from "../../Assets/Projects/Fellowship Presentation.pptx.pdf";
 import audioTextureReport from "../../Assets/Projects/Project_Report___ECE_176 (2).pdf";
+import claimLearnReport from "../../Assets/Projects/Jacob Lamadrid - ClaimLearn.pdf";
 
 const projects = [
   {
     title: "Bayesian Temporal Signal Extraction & Uncertainty Quantification",
     domain: "Bayesian Signal Processing",
-    type: "R/Shiny",
+    type: "Modeling",
     summary:
       "Probabilistic peak detection and uncertainty quantification for sparse LC-MS sensor data with an interactive Shiny app.",
     impact:
       "Uses BIC model selection, Stan variational inference, temporal aggregation, and 2D/3D visualization to separate latent signal from stochastic noise and artifacts.",
-    stack: ["R", "Stan", "RShiny", "Plotly", "Variational Bayes", "LC-MS"],
+    stack: ["R", "Stan", "R Shiny", "Plotly", "Variational Bayes", "LC-MS"],
     links: {
       github: "https://github.com/j-lamadrid/probabilistic-sensor-uq",
       demo: "https://j-lamadrid.shinyapps.io/probabilistic-sensor-uq/",
-    },
-    featured: true,
-  },
-  {
-    title: "ACE Clinical Data Desk",
-    domain: "Clinical Data Engineering",
-    type: "R/Shiny",
-    summary:
-      "A deployed Shiny data-management app packaging clinical workflows for the UCSD Autism Center of Excellence.",
-    impact:
-      "Supports eye-tracking merges, visit flagging, diagnostic grouping, treatment-hour summaries, and MacArthur percentile population for research data workflows.",
-    stack: ["Python", "Shiny", "Pandas", "Clinical Data", "Excel Workflows"],
-    links: {
-      github: "https://github.com/j-lamadrid/clinical-dm-shiny",
-      demo: "https://j-lamadrid.shinyapps.io/ace_clinical_data_desk/",
     },
     featured: true,
   },
@@ -46,20 +32,6 @@ const projects = [
     },
   },
   {
-    title: "Audio Texture Synthesis",
-    domain: "Signal Processing",
-    type: "Applied ML",
-    summary:
-      "Audio texture generation using PyTorch and TorchAudio by adapting image texture synthesis and style-transfer methods to spectrograms.",
-    impact:
-      "Builds a CNN-based generative approach around Gram matrix optimization while documenting network design, limitations, and audio-quality tradeoffs.",
-    stack: ["Python", "PyTorch", "TorchAudio", "CNNs", "Signal Processing"],
-    links: {
-      github: "https://github.com/j-lamadrid/audio-texture-synthesis",
-      report: audioTextureReport,
-    },
-  },
-  {
     title: "TrackiT!",
     domain: "Health Application",
     type: "Software",
@@ -72,10 +44,37 @@ const projects = [
       github: "https://github.com/ACE-UCSD/Treatment_Engagement_Parent_App",
     },
   },
-  {
+   {
+    title: "ClaimLearn",
+    domain: "Operations Research",
+    type: "Applied ML",
+    summary:
+      "A machine learning pipeline for claim risk assessment and statistical modeling for audit prioritization in insurance operations.",
+    impact:
+      "Reduces manual claim review workload by integrating feature engineering, model selection, and evaluation for insurance operations.",
+    stack: ["Python", "R Shiny", "Scikit-learn", "Statistical Modeling", "BART", "Anomaly Detection"],
+    links: {
+      report: claimLearnReport,
+    },
+  },
+   {
+    title: "ACE Clinical Data Desk",
+    domain: "Clinical Data Engineering",
+    type: "Software",
+    summary:
+      "A deployed Shiny data-management app packaging clinical workflows for the UCSD Autism Center of Excellence.",
+    impact:
+      "Supports eye-tracking merges, visit flagging, diagnostic grouping, treatment-hour summaries, and MacArthur percentile population for research data workflows.",
+    stack: ["Python", "Shiny", "Pandas", "Clinical Data", "Excel Workflows"],
+    links: {
+      github: "https://github.com/j-lamadrid/clinical-dm-shiny",
+      demo: "https://j-lamadrid.shinyapps.io/ace_clinical_data_desk/",
+    },
+  },
+   {
     title: "WaveMAP",
     domain: "Computational Neuroscience",
-    type: "Applied ML",
+    type: "Modeling",
     summary:
       "Neural signal processing and analysis project applying WaveMAP-style waveform clustering to neocortical waveforms.",
     impact:
@@ -83,6 +82,20 @@ const projects = [
     stack: ["Python", "Jupyter", "Clustering", "Waveforms", "Dimensionality Reduction"],
     links: {
       github: "https://github.com/j-lamadrid/wavemap-project",
+    },
+  },
+   {
+    title: "Audio Texture Synthesis",
+    domain: "Signal Processing",
+    type: "Applied ML",
+    summary:
+      "Audio texture generation using PyTorch and TorchAudio by adapting image texture synthesis and style-transfer methods to spectrograms.",
+    impact:
+      "Builds a CNN-based generative approach around Gram matrix optimization while documenting network design, limitations, and audio-quality tradeoffs.",
+    stack: ["Python", "PyTorch", "TorchAudio", "CNNs", "Signal Processing"],
+    links: {
+      github: "https://github.com/j-lamadrid/audio-texture-synthesis",
+      report: audioTextureReport,
     },
   },
   {
@@ -114,6 +127,6 @@ const projects = [
   },
 ];
 
-export const projectFilters = ["All", "R/Shiny", "Research", "Applied ML", "Software", "Engineering"];
+export const projectFilters = ["All", "Modeling", "Research", "Applied ML", "Software", "Engineering"];
 
 export default projects;

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/Jacob_Lamadrid_Resume.pdf";
+import pdf from "../../Assets/jacob_lamadrid_resume.pdf";
 import resumeData from "./resumeData";
 import { AiOutlineDownload, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { BsGithub, BsLinkedin } from "react-icons/bs";

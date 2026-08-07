@@ -95,15 +95,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/music"
-                onClick={() => updateExpanded(false)}
-              >
-                <FaMusic style={{ marginBottom: "2px" }} /> Music
-              </Nav.Link>
-            </Nav.Item>
+            
 
             <Nav.Item className="fork-btn">
               <Button

@@ -6,21 +6,22 @@ function AboutCard() {
     <Card className="quote-card-view about-copy-card">
       <Card.Body>
         <p>
-          I am from <span className="brown">San Diego, California</span> and I
-          am pursuing a Masters in Analytics at{" "}
+          I am from <span className="brown">San Diego, California</span> and 
+          currently pursuing a Masters in Analytics at{" "}
           <span className="brown">Georgia Tech</span>, focused on analytical
-          tools, probabilistic modeling, and machine learning and am a 
-          <span className="brown"> Graduate Data Science Intern</span> with Centene. 
-          I have also completed
-          my B.S. in Cognitive Science specializing in Machine Learning with a
-          minor in Data Science at{" "}
-          <span className="brown">UC San Diego</span>.
+          tools, probabilistic modeling, and machine learning. I have also completed 
+          my B.S. in Cognitive Science specializing 
+          in Machine Learning and Neural Computation with a minor in Data Science at
+          {" "} <span className="brown">UC San Diego</span>.
         </p>
 
         <p>
-          My previous experience includes a{" "}
-          <span className="brown">NASA Langley Research Center</span> internship
-          with the Atmospheric Science Data Center, where I worked on quality
+          Most recently I was a
+          <span className="brown"> Graduate Data Science Intern</span> with Centene
+          involved in the development of a machine learning model for risk assessment 
+          on claims data. Other previous experience includes an internship with{" "}
+          <span className="brown">NASA Langley Research Center </span>
+          within the Atmospheric Science Data Center, where I worked on quality
           analysis and migration of scientific data for the{" "}
           <a
             href="https://tolnet.larc.nasa.gov/"

@@ -1,6 +1,6 @@
 const resumeData = {
   name: "Jacob Lamadrid",
-  headline: "Machine Learning | Data Science | Systems Analytics | Research",
+  headline: "Machine Learning | Data Science | Operations Research | Signal Processing",
   contact: [
     {
       label: "Phone",
@@ -53,8 +53,8 @@ const resumeData = {
       location: "St. Louis, MO",
       date: "May 2026 - Aug 2026",
       bullets: [
-        "Developed end-to-end data engineering pipelines unifying Internal Audit and claims warehouse sources into a common schema of 127K+ claims for anomaly detection on large-scale health insurance claims data.",
-        "Independently designed and implemented an AutoEncoder-based weakly-supervised anomaly detection method in PyTorch, achieving an 10x increase in precision of identifying erroneous claims over the prior baseline on a 50:1 class-imbalanced dataset.",
+        "Developed end-to-end data pipelines unifying internal audit and claims warehouse sources into a common schema of 127k+ claims, enabling supervised anomaly detection on high dimensional, highly imbalanced (50:1) data",
+        "Applied Bayesian Additive Regression Trees (BART) to quantify predictive uncertainty on flagged records, enabling risk-tiered prioritization that focused reviewer effort on high-confidence anomalies and reduced false-positive volume 10x",
       ],
     },
     {
@@ -63,8 +63,8 @@ const resumeData = {
       location: "San Diego, CA",
       date: "Jul 2024 - Sep 2024",
       bullets: [
-        "Conducted independent research on audio reconstruction from EEG signals using CNNs, Latent Diffusion Models, and DCGANs; managed full ML lifecycle from multimodal data ingestion to model evaluation.",
-        "Designed signal processing pipelines for EEG and audio data; translated theoretical research into reproducible PyTorch experiments on custom neuroimaging datasets.",
+        "Conducted independent research on audio reconstruction from EEG signals using CNNs, Latent Diffusion Models, and DCGANs; managed full ML lifecycle from multimodal data ingestion to model evaluation",
+        "Designed signal processing pipelines for EEG and audio data; translated theoretical research into reproducible PyTorch experiments on custom neuroimaging datasets",
       ],
     },
     {
@@ -73,8 +73,8 @@ const resumeData = {
       location: "San Diego, CA",
       date: "Jun 2022 - Sep 2024",
       bullets: [
-        "Built TrackiT!, a cross-platform clinical app (Flutter/Dart/Firestore) for longitudinal tracking of developmental trends across neurodevelopmental studies.",
-        "Designed GUI tools and algorithmic pipelines for clinical data entry, eye-tracking QA, and behavioral assessments, supporting downstream statistical modeling workflows.",
+        "Built TrackiT!, a cross-platform clinical app (Flutter/Dart/Firestore) for longitudinal tracking of developmental trends across neurodevelopmental studies",
+        "Designed GUI tools and algorithmic pipelines for clinical data entry, eye-tracking QA, and behavioral assessments, supporting downstream statistical modeling workflows",
       ],
     },
     {
@@ -83,8 +83,8 @@ const resumeData = {
       location: "Hampton, VA",
       date: "Jun 2023 - Sep 2023",
       bullets: [
-        "Developed end-to-end data pipelines in Python to standardize and migrate legacy atmospheric science datasets to the NASA TOLNet repository, ensuring format compliance across multiple research instruments and sites.",
-        "Built automated data quality analytics to flag anomalies and inconsistencies in historical lidar datasets; delivered summary reports and documentation to cross-functional research teams.",
+        "Developed end-to-end data pipelines in Python to standardize and migrate legacy atmospheric science datasets to the NASA TOLNet repository, ensuring format compliance across multiple research instruments and sites",
+        "Built automated data quality analytics to flag anomalies and inconsistencies in historical lidar datasets; delivered summary reports and documentation to cross-functional research teams",
       ],
     },
   ],
@@ -94,7 +94,7 @@ const resumeData = {
       date: "2025",
       stack: ["R", "RStan", "RShiny", "Variational Inference", "LC-MS Mass Spectrometry"],
       bullets: [
-        "Engineered a Bayesian deconvolution pipeline for sparse high-dimensional sensor arrays; designed automated QC using posterior uncertainty estimates to separate latent signals from stochastic noise and artifacts.",
+        "Engineered a Bayesian deconvolution pipeline for sparse high-dimensional sensor arrays; designed automated QC using posterior uncertainty estimates to separate latent signals from stochastic noise and artifacts",
       ],
     },
     {
@@ -102,7 +102,7 @@ const resumeData = {
       date: "2023",
       stack: ["Python", "PyTorch", "Generative AI", "Signal Processing"],
       bullets: [
-        "Adapted 2D computer vision style-transfer algorithms for 1D temporal audio data; built a CNN-based generative model from scratch using PyTorch to synthesize realistic audio textures via Gram matrix optimization.",
+        "Adapted 2D computer vision style-transfer algorithms for 1D temporal audio data; built a CNN-based generative model from scratch using PyTorch to synthesize realistic audio textures via Gram matrix optimization",
       ],
     },
     {
@@ -110,7 +110,7 @@ const resumeData = {
       date: "Ongoing",
       stack: ["Python", "Raspberry Pi", "C++", "Arduino", "Embedded Systems", "Signal Processing"],
       bullets: [
-        "Developing a standalone embedded instrument on Raspberry Pi and Arduino display hardware for real-time radio astronomy and meteorology data capture, processing, and visualization.",
+        "Developing a standalone embedded instrument on Raspberry Pi and Arduino display hardware for real-time radio astronomy and meteorology data capture, processing, and visualization",
       ],
     },
   ],
