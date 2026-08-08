@@ -18,10 +18,6 @@ function About() {
         <Row className="about-lead-row align-items-center">
           <Col xs={12} lg={7} className="reveal-up">
             <p className="section-kicker">About</p>
-            <h1 className="project-heading">
-              Building useful systems from{" "}
-              <strong className="brown">scientific data</strong>.
-            </h1>
             <Aboutcard />
           </Col>
           <Col xs={12} lg={5} className="about-img reveal-up delay-1">

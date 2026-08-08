@@ -28,20 +28,8 @@ const projects = [
       "Connects EEG preprocessing, audio feature extraction, CNNs, latent diffusion, and DCGAN experiments into reproducible neuroimaging pipelines.",
     stack: ["Python", "PyTorch", "EEG", "Spectrograms", "Deep Learning"],
     links: {
+      github: "https://github.com/j-lamadrid/eeg2audio",
       report: eegReport,
-    },
-  },
-  {
-    title: "TrackiT!",
-    domain: "Health Application",
-    type: "Software",
-    summary:
-      "Cross-platform clinical tracking app for longitudinal developmental trends across neurodevelopmental studies.",
-    impact:
-      "Combines Flutter, Dart, and Firestore with clinical workflow design for treatment engagement, provider contact, and progress tracking.",
-    stack: ["Flutter", "Dart", "Firestore", "Mobile UX", "Health Tech"],
-    links: {
-      github: "https://github.com/ACE-UCSD/Treatment_Engagement_Parent_App",
     },
   },
    {
@@ -55,6 +43,19 @@ const projects = [
     stack: ["Python", "R Shiny", "Scikit-learn", "Statistical Modeling", "BART", "Anomaly Detection"],
     links: {
       report: claimLearnReport,
+    },
+  },
+  {
+    title: "TrackiT!",
+    domain: "Health Application",
+    type: "Software",
+    summary:
+      "Cross-platform clinical tracking app for longitudinal developmental trends across neurodevelopmental studies.",
+    impact:
+      "Combines Flutter, Dart, and Firestore with clinical workflow design for treatment engagement, provider contact, and progress tracking.",
+    stack: ["Flutter", "Dart", "Firestore", "Mobile UX", "Health Tech"],
+    links: {
+      github: "https://github.com/ACE-UCSD/Treatment_Engagement_Parent_App",
     },
   },
    {
@@ -124,6 +125,7 @@ const projects = [
       demo: "/projects/meteor-instrument-demo",
     },
     demoLabel: "Prototype",
+    featured: true,
   },
 ];
 
