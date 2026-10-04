@@ -1,6 +1,6 @@
 const resumeData = {
   name: "Jacob Lamadrid",
-  headline: "Machine Learning | Data Science | Operations Research | Signal Processing",
+  headline: "Probabilistic Modeling | Machine Learning | Operations Research | Signal Processing",
   contact: [
     {
       label: "Phone",
@@ -47,6 +47,15 @@ const resumeData = {
     },
   ],
   experience: [
+    {
+      title: "Production Test Technician",
+      organization: "Frontgate Technologies",
+      location: "Carlsbad, CA",
+      date: "September 2026 - Present",
+      bullets: [
+        "Conducted production testing and quality assurance for radio frequency (RF) and microwave devices, ensuring compliance with industry standards and specifications for defense and aerospace applications",
+      ],
+    },
     {
       title: "Graduate Data Science Intern",
       organization: "Centene Corporation",
@@ -108,7 +117,7 @@ const resumeData = {
     {
       title: "Meteor Instrument - Embedded Radio Astronomy & Meteorology System",
       date: "Ongoing",
-      stack: ["Python", "Raspberry Pi", "C++", "Arduino", "Embedded Systems", "Signal Processing"],
+      stack: ["Python", "Raspberry Pi", "C++", "Arduino", "Embedded Systems", "Signal Processing", "RF Engineering"],
       bullets: [
         "Developing a standalone embedded instrument on Raspberry Pi and Arduino display hardware for real-time radio astronomy and meteorology data capture, processing, and visualization",
       ],

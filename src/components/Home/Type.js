@@ -10,6 +10,7 @@ function Type() {
           "Machine Learning Engineer",
           "Operations Researcher",
           "Scientific Software Developer",
+          "RF Test Technician",
           "Computational Neuroscientist",
           "Super Cool!",
         ],

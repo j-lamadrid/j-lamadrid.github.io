@@ -21,7 +21,7 @@ function Home() {
           <Row className="align-items-center">
             <Col xs={12} lg={7} className="home-header reveal-up">
               <p className="home-eyebrow">
-                Data Science | Machine Learning | Operations Research | Signal Processing
+                Probabilistic Modeling | Machine Learning | Operations Research | Signal Processing
               </p>
               <h1 className="heading-name">
                 Jacob <strong className="main-name">Lamadrid</strong>
